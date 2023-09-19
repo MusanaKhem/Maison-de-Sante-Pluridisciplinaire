@@ -4,19 +4,20 @@
 
 /* Start - COULEURS DU SITE - OK */
 :root{
-    --green:#16a085;
-    --black:#444;
-    --light-color:#777;
     --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
     --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
-    --border:.2rem solid var(--green);
+    --border:.2rem solid var(--MSP);
     --blanche: #ffff;
     --noir: #222;
-    --primaire: #007bc4;
     --gris: #888;
     --gold: #dec105;
-    --persan: rgb(19, 169, 166);
-    --MSP: #93d6d0;
+    --MSP: #00b5c6;
+    --persan: #00b5c6;
+    --green:#00b5c6;
+    --black:#444;
+    --light-color:#777;
+    --primaire: #00b5c6;
+
 }
 /* End - COULEURS DU SITE - OK */
 
@@ -99,7 +100,7 @@ header .navbar a:hover {
     padding-bottom: 2rem;
     text-shadow: var(--text-shadow);
     text-transform: uppercase;
-    color:var(--green);
+    color:var(--MSP);
     font-size: 4rem;
     letter-spacing: .4rem;
 }
@@ -157,7 +158,7 @@ header .navbar a:hover {
     color: var(--noir);
 }
 .header .logo i{
-    color: var(--green);
+    color: var(--MSP);
 }
     /* Start - TRAIT DU MENU NAVBAR - OK */
 .header .navbar a{
@@ -166,7 +167,7 @@ header .navbar a:hover {
     margin-left: 2rem;
 }
 .header .navbar a:hover{
-    color: var(--green);
+    color: var(--MSP);
 }
     /* End - TRAIT DU MENU NAVBAR - OK */
 
@@ -207,7 +208,7 @@ header .navbar a:hover {
 }
 .home .content h2{
     font-size: 4.5rem;
-    color:var(--green);
+    color:var(--MSP);
     line-height: 1.5;
     text-shadow: var(--text-shadow);
 }
@@ -258,7 +259,7 @@ header .navbar a:hover {
 }
 .homecontent .content h2{
     font-size: 4.5rem;
-    color:var(--green);
+    color:var(--MSP);
     line-height: 1.5;
     text-shadow: var(--text-shadow);
 }
@@ -308,7 +309,7 @@ header .navbar a:hover {
 }
 .missions .content h2{
     font-size: 4.5rem;
-    color:var(--green);
+    color:var(--MSP);
     line-height: 1.5;
     text-shadow: var(--text-shadow);
 }
@@ -350,7 +351,7 @@ header .navbar a:hover {
     text-shadow: var(--text-shadow);
     text-transform: inherit;
     font-size: 4.5rem;
-    color:var(--green);
+    color:var(--MSP);
     line-height: 1.5;
 }
 .services .subtile {
@@ -370,7 +371,7 @@ header .navbar a:hover {
     text-align: justify;
 }
 .services .box-container .box i {
-    color: var(--green);
+    color: var(--MSP);
     font-size: 5rem;
     padding-bottom: .5rem;
 }
@@ -397,7 +398,7 @@ header .navbar a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:2rem;
-    align-items: center;rap;
+    align-items: center;
     gap:1.5rem;
     padding-top: 10rem;
 }
@@ -417,7 +418,7 @@ header .navbar a:hover {
 }
 .infos .content h2{
     font-size: 4.5rem;
-    color:var(--green);
+    color:var(--MSP);
     line-height: 1.5;
     text-shadow: var(--text-shadow);
 }
@@ -464,7 +465,7 @@ header .navbar a:hover {
     width: 100%;
 }
 .icontainer .icones i{
-    color: var(--green);
+    color: var(--MSP);
     font-size: 4.5rem;
     padding-bottom:.7rem;
 }
@@ -545,7 +546,10 @@ header .navbar a:hover {
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> dd0c3fde203bd8b0f41a6a4312d1d7f7bc036bdc
 /* Start - Section BLOG - OK */
 .blog .blogbox {
     display: grid;
@@ -620,125 +624,6 @@ header .navbar a:hover {
 
 
 
-
-
-
-
-
-
-/* Start - Section NEWSLETTER - ESSAI 2 - */
-    /* Start - NEWSLETTER : PARAGRAPHE DU SOUS-TITRE - OK */
-.newsletter {
-    display: grid;
-    grid-template-areas: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 2rem;
-    width: 100%;
-    padding: 15px;
-}   
-.newsletter p {
-    color: var(--light-color);
-    font-size: 2rem;
-    line-height: 1.2;
-    padding: 1rem;
-    padding-left: 20px;
-    padding-right: 25px;
-    text-align: justify;
-}
-    /* End - NEWSLETTER : PARAGRAPHE - OK */
-
-    /* Start - NEWSLETTER : SOUS-TITRE "FORMULAIRE A REMPLIR " - OK */
-.newsletter .row form h3{
-    color:var(--noir);
-    padding-bottom: 1rem;
-    font-size: 3rem;
-    text-align: center;
-    text-transform: uppercase;
-    border-bottom: 1px solid var(--primaire);
-    text-shadow: 2px 0 0 orange;
-}
-
-/* Start - FORMAT DES LEGENDES */
-.newsletter .row legend {
-    color: var(--persan);
-    font-weight: bold;
-    font-size: 1.5rem;    
-}
-/* Start - FORMAT DES INTITULES */
-.newsletter .row label {
-    color: var(--noir);
-    font-size: 1.4rem;
-}
-
-/* Start - FORMAT DES ZONES DE REMPLISSAGE */
-.newsletter .row form input {
-    margin: 2px 0;
-    padding: 5px;
-    border: 2px solid var(--MSP);
-    border-radius: 4px;
-    outline: 0;      
-}
-
-.newsletter .row form {
-    background: #fff;
-    border:var(--border);
-    padding: 2rem;
-    border-radius: .5rem;
-    border-radius: 25px;
-    margin: 0 auto;
-    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.2);
-}
-.newsletter .row form .box {
-    width: 100%;
-    margin:.7rem 0;
-    border-radius: .5rem;
-    border:var(--border);
-    font-size: 1.6rem;
-    color: var(--black);
-    text-transform: none;
-    padding: 1rem;    
-}
-.star {
-    color: red;
-    font-size: 20px;
-    margin-left: 3px;
-    font-weight: bold;
-}
-.newsletter input:hover {
-    border: 2px solid var(--primaire);
-    border-radius: 4px;
-    outline: none; 
-}
-.sinscrire input {
-    width: 75%;
-    padding: 5px 55px;
-    background-color: var(--primaire);
-    background: var(--persan);
-    border-radius: 4px;
-    border : 0;
-    color: var(--blanche);
-    margin-top: 2px;
-    margin-bottom: 2px;
-    cursor: pointer;
-    display: inline-block;
-}
-.sinscrire input:hover {
-    background-color: var(--blanche);
-    color: var(--persan);
-    letter-spacing: 1px;
-    width: 100%;
-    transition: all .4s ease-in;
-    display: inline-block;
-    cursor: pointer;
-}
-/* End - Section NEWSLETTER - ESSAI 2 - */
-
-
-
-
-
-
-
-
 /* Start - Section CONTACTS - OK */
 .contacts .contact {
     display: grid;
@@ -769,7 +654,7 @@ header .navbar a:hover {
     width: 100%;      
 }
 .contacts .contact .caseprenom:hover {
-    background-color: var(--green);
+    background-color: var(--MSP);
     color: var(--blanche);
     letter-spacing: 1px;
 }
@@ -790,7 +675,7 @@ header .navbar a:hover {
     width: 100%;  
 }
 .contacts .contact .caseadmail:hover {
-    background-color: var(--green);
+    background-color: var(--MSP);
     color: var(--blanche);
     letter-spacing: 1px;  
 }
@@ -850,7 +735,7 @@ header .navbar a:hover {
 .envoyer input {
     width: 87%;
     padding: 5px 55px;
-    background-color: var(--primaire);
+    background-color: var(--MSP);
     background: var(--persan);
     border-radius: 4px;
     border : 0;
@@ -893,7 +778,7 @@ header .navbar a:hover {
 .supfooter {
     background: var(--noir);
     width: 100%;
-    padding: ;
+    padding: 2rem 1%;
     margin-top: 4rem;
     line-height: 1.2rem;
     padding: 0.75rem 1.5rem 0.75rem;
@@ -965,9 +850,6 @@ header .navbar a:hover {
 
 
 
-
-
-
 /* Début : Réalisateur / Concepteur du site - OK */
 .fin {
     background-color: var(--gris);
@@ -989,11 +871,6 @@ header .navbar a:hover {
     background-color: var(--gris);    
 }
 /* Fin : Réalisateur / Concepteur du site - OK */
-
-
-
-
-
 
 
 
