@@ -288,7 +288,7 @@ header .navbar a:hover {
 
 
 
-/* Start - Section BUT ET OBJECTIFS OK */
+/* Start - Section MISSIONS OK */
 .missions {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -303,7 +303,7 @@ header .navbar a:hover {
 .missions .image img{
     width: 100%;
 }
-/* Start - Section BUT ET OBJECTIFS - Content OK*/
+/* Start - Section MISSIONS - Content OK*/
 .missions .content{
     flex:1 1 45rem;
 }
@@ -332,9 +332,57 @@ header .navbar a:hover {
     line-height: 1.2;
     padding: .75rem 0;
 }
-/* End - Section BUT ET OBJECTIFS - Content OK */
-/* End - Section BUT ET OBJECTIFS OK */
+/* End - Section MISSIONS - Content OK */
+/* End - Section MISSIONS OK */
 
+
+
+/* Start - Section OBJECTIFS OK */
+.objectifs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:2rem;
+    align-items: center;
+    gap:1.5rem;
+    padding-top: 10rem;
+}
+.objectifs .image{
+    flex:1 1 45rem;
+}
+.objectifs .image img{
+    width: 100%;
+}
+/* Start - Section OBJECTIFS - Content OK*/
+.objectifs .content{
+    flex:1 1 45rem;
+}
+.objectifs .content h2{
+    font-size: 4.5rem;
+    color:var(--MSP);
+    line-height: 1.5;
+    text-shadow: var(--text-shadow);
+}
+.objectifs .content h3{
+    font-size: 2.9rem;
+    color:var(--noir);
+    line-height: 1.8;
+    text-shadow: var(--text-shadow);
+}
+.objectifs .content p{
+    font-size: 1.7rem;
+    color:var(--light-color);
+    line-height: 1;
+    padding: 1rem 0;
+    text-align: justify;
+}
+.objectifs .content li{
+    font-size: 1.4rem;
+    color:var(--light-color);
+    line-height: 1.2;
+    padding: .75rem 0;
+}
+/* End - Section OBJECTIFS - Content OK */
+/* End - Section OBJECTIFS OK */
 
 
 
@@ -545,11 +593,6 @@ header .navbar a:hover {
 
 
 
-
-<<<<<<< HEAD
-
-=======
->>>>>>> dd0c3fde203bd8b0f41a6a4312d1d7f7bc036bdc
 /* Start - Section BLOG - OK */
 .blog .blogbox {
     display: grid;
