@@ -504,6 +504,13 @@ header .navbar a:hover {
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
+
+.icontainer .content{
+    font-size: 4rem;
+    color:var(--MSP);
+    line-height: 1.5;
+    text-shadow: var(--text-shadow);
+}
 .icontainer .icones {
     border: var(--border);
     box-shadow: var(--box-shadow);
