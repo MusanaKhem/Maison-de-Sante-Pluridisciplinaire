@@ -546,157 +546,19 @@ header .navbar a:hover {
 
 
 
-
-/* Start - Section RESERVATION - */
-.reservation .row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-    gap:0.1rem;
-    align-items: center;
-}
-.reservation .row .image {
-    flex:1 1 45rem;
-}
-.reservation .row .image img{
-    width: 100%;
-}
-
-.reservation .row form {
-    flex: 1 1 45rem;
-    background: #fff;
-    border:var(--border);
-    padding: 2rem;
-    border-radius: .5rem;
-    border-radius: 25px;
-    margin: 0 auto;
-    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.2);    
-}
-.reservation .row form h3{
-    color:var(--noir);
-    padding-bottom: 1rem;
-    font-size: 3rem;
-    text-align: center;
-    text-transform: uppercase;
-    border-bottom: 1px solid var(--primaire);
-    text-shadow: 2px 0 0 orange;
-}
-
-.reservation .row form .box {
-    width: 100%;
-    margin:.7rem 0;
-    border-radius: .5rem;
-    border:var(--border);
-    font-size: 1.6rem;
-    color: var(--black);
-    text-transform: none;
-    padding: 1rem;    
-}
-.reservation input:hover {
-    border: 2px solid var(--primaire);
-    border-radius: 4px;
-    outline: none;
-}
-.reservation input:hover {
-    background-color: var(--blanche);
-    color: var(--persan);
-    letter-spacing: 1px;
-    width: 100%;
-    transition: all .4s ease-in;
-    display: inline-block;
-    cursor: pointer;
-}
-.validreserve input {
-    width: 75%;
-    padding: 5px 55px;
-    background-color: var(--primaire);
-    background: var(--persan);
-    border-radius: 4px;
-    border : 0;
-    color: var(--blanche);
-    margin-top: 2px;
-    margin-bottom: 2px;
-    cursor: pointer;
-    display: inline-block;
-}
-.validreserve input:hover {
-    background-color: var(--blanche);
-    color: var(--persan);
-    letter-spacing: 1px;
-    width: 100%;
-    transition: all .4s ease-in;
-    display: inline-block;
-    cursor: pointer;
-}
-
-/* End - Section RESERVATION - */
-
-
-
-
-
-/* Start - Section AVIS - OK */
-.avis .abox {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-    gap:2rem;
-}
-.avis .abox .box {
-    border: var(--border);
-    box-shadow: var(--box-shadow);
-    border-radius: .5rem;
-    padding:2.5rem;
-    background: var(--blanche);
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    z-index: 0;
-}
-.avis .abox .box img {
-    height: 10rem;
-    width: 10rem;
-    border-radius: 50%;
-    object-fit: cover;
-    border: .5rem solid var(--gold);
-}
-.avis .abox .box h3 {
-    color: var(--noir);
-    font-size: 2rem;
-    padding: .5rem 0;
-}
-.avis .abox .box .stars i {
-    color: var(--gold);
-    font-size: 1.5rem;
-}
-.avis .abox .box .texte {
-    color: var(--light-color);
-    line-height: 1.8;
-    font-size: 1.6rem;
-    padding-top: 4rem;
-}
-.avis .abox .box::before{
-    content: '';
-    position: absolute;
-    top:-4rem; left: 50%;
-    transform:translateX(-50%);
-    background:var(--persan);
-    border-bottom-left-radius: 60%;
-    border-bottom-right-radius: 60%;
-    height: 25rem;
-    width: 120%;
-    z-index: -1;
-}
-/* End - Section AVIS - OK */
-
-
-
-
-
-
 /* Start - Section BLOG - OK */
 .blog .blogbox {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
     gap:2rem;
+}
+.blog .subtile {
+    font-size: 2rem;
+    color:var(--MSP);
+    line-height: 1.8;
+    text-align: center;     
+    width: 100%;
+    height: 100%;
 }
 .blog .blogbox .box {
     border: var(--border);
