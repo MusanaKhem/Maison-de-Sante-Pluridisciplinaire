@@ -4,19 +4,20 @@
 
 /* Start - COULEURS DU SITE - OK */
 :root{
-    --green:#16a085;
-    --black:#444;
-    --light-color:#777;
     --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
     --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
-    --border:.2rem solid var(--green);
+    --border:.2rem solid var(--MSP);
     --blanche: #ffff;
     --noir: #222;
-    --primaire: #007bc4;
     --gris: #888;
     --gold: #dec105;
-    --persan: rgb(19, 169, 166);
-    --MSP: #93d6d0;
+    --MSP: #00b5c6;
+    --persan: #00b5c6;
+    --green:#00b5c6;
+    --black:#444;
+    --light-color:#777;
+    --primaire: #00b5c6;
+
 }
 /* End - COULEURS DU SITE - OK */
 
@@ -99,7 +100,7 @@ header .navbar a:hover {
     padding-bottom: 2rem;
     text-shadow: var(--text-shadow);
     text-transform: uppercase;
-    color:var(--green);
+    color:var(--MSP);
     font-size: 4rem;
     letter-spacing: .4rem;
 }
@@ -157,7 +158,7 @@ header .navbar a:hover {
     color: var(--noir);
 }
 .header .logo i{
-    color: var(--green);
+    color: var(--MSP);
 }
     /* Start - TRAIT DU MENU NAVBAR - OK */
 .header .navbar a{
@@ -166,7 +167,7 @@ header .navbar a:hover {
     margin-left: 2rem;
 }
 .header .navbar a:hover{
-    color: var(--green);
+    color: var(--MSP);
 }
     /* End - TRAIT DU MENU NAVBAR - OK */
 
@@ -207,7 +208,7 @@ header .navbar a:hover {
 }
 .home .content h2{
     font-size: 4.5rem;
-    color:var(--green);
+    color:var(--MSP);
     line-height: 1.5;
     text-shadow: var(--text-shadow);
 }
@@ -258,7 +259,7 @@ header .navbar a:hover {
 }
 .homecontent .content h2{
     font-size: 4.5rem;
-    color:var(--green);
+    color:var(--MSP);
     line-height: 1.5;
     text-shadow: var(--text-shadow);
 }
@@ -287,7 +288,7 @@ header .navbar a:hover {
 
 
 
-/* Start - Section BUT ET OBJECTIFS OK */
+/* Start - Section MISSIONS OK */
 .missions {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -302,13 +303,13 @@ header .navbar a:hover {
 .missions .image img{
     width: 100%;
 }
-/* Start - Section BUT ET OBJECTIFS - Content OK*/
+/* Start - Section MISSIONS - Content OK*/
 .missions .content{
     flex:1 1 45rem;
 }
 .missions .content h2{
     font-size: 4.5rem;
-    color:var(--green);
+    color:var(--MSP);
     line-height: 1.5;
     text-shadow: var(--text-shadow);
 }
@@ -331,9 +332,57 @@ header .navbar a:hover {
     line-height: 1.2;
     padding: .75rem 0;
 }
-/* End - Section BUT ET OBJECTIFS - Content OK */
-/* End - Section BUT ET OBJECTIFS OK */
+/* End - Section MISSIONS - Content OK */
+/* End - Section MISSIONS OK */
 
+
+
+/* Start - Section OBJECTIFS OK */
+.objectifs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:2rem;
+    align-items: center;
+    gap:1.5rem;
+    padding-top: 10rem;
+}
+.objectifs .image{
+    flex:1 1 45rem;
+}
+.objectifs .image img{
+    width: 100%;
+}
+/* Start - Section OBJECTIFS - Content OK*/
+.objectifs .content{
+    flex:1 1 45rem;
+}
+.objectifs .content h2{
+    font-size: 4.5rem;
+    color:var(--MSP);
+    line-height: 1.5;
+    text-shadow: var(--text-shadow);
+}
+.objectifs .content h3{
+    font-size: 2.9rem;
+    color:var(--noir);
+    line-height: 1.8;
+    text-shadow: var(--text-shadow);
+}
+.objectifs .content p{
+    font-size: 1.7rem;
+    color:var(--light-color);
+    line-height: 1;
+    padding: 1rem 0;
+    text-align: justify;
+}
+.objectifs .content li{
+    font-size: 1.4rem;
+    color:var(--light-color);
+    line-height: 1.2;
+    padding: .75rem 0;
+}
+/* End - Section OBJECTIFS - Content OK */
+/* End - Section OBJECTIFS OK */
 
 
 
@@ -350,7 +399,7 @@ header .navbar a:hover {
     text-shadow: var(--text-shadow);
     text-transform: inherit;
     font-size: 4.5rem;
-    color:var(--green);
+    color:var(--MSP);
     line-height: 1.5;
 }
 .services .subtile {
@@ -370,7 +419,7 @@ header .navbar a:hover {
     text-align: justify;
 }
 .services .box-container .box i {
-    color: var(--green);
+    color: var(--MSP);
     font-size: 5rem;
     padding-bottom: .5rem;
 }
@@ -397,7 +446,7 @@ header .navbar a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:2rem;
-    align-items: center;rap;
+    align-items: center;
     gap:1.5rem;
     padding-top: 10rem;
 }
@@ -417,7 +466,7 @@ header .navbar a:hover {
 }
 .infos .content h2{
     font-size: 4.5rem;
-    color:var(--green);
+    color:var(--MSP);
     line-height: 1.5;
     text-shadow: var(--text-shadow);
 }
@@ -455,6 +504,13 @@ header .navbar a:hover {
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
+
+.icontainer .content{
+    font-size: 4rem;
+    color:var(--MSP);
+    line-height: 1.5;
+    text-shadow: var(--text-shadow);
+}
 .icontainer .icones {
     border: var(--border);
     box-shadow: var(--box-shadow);
@@ -464,7 +520,7 @@ header .navbar a:hover {
     width: 100%;
 }
 .icontainer .icones i{
-    color: var(--green);
+    color: var(--MSP);
     font-size: 4.5rem;
     padding-bottom:.7rem;
 }
@@ -544,159 +600,19 @@ header .navbar a:hover {
 
 
 
-
-
-
-/* Start - Section RESERVATION - */
-.reservation .row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-    gap:0.1rem;
-    align-items: center;
-}
-.reservation .row .image {
-    flex:1 1 45rem;
-}
-.reservation .row .image img{
-    width: 100%;
-}
-
-.reservation .row form {
-    flex: 1 1 45rem;
-    background: #fff;
-    border:var(--border);
-    padding: 2rem;
-    border-radius: .5rem;
-    border-radius: 25px;
-    margin: 0 auto;
-    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.2);    
-}
-.reservation .row form h3{
-    color:var(--noir);
-    padding-bottom: 1rem;
-    font-size: 3rem;
-    text-align: center;
-    text-transform: uppercase;
-    border-bottom: 1px solid var(--primaire);
-    text-shadow: 2px 0 0 orange;
-}
-
-.reservation .row form .box {
-    width: 100%;
-    margin:.7rem 0;
-    border-radius: .5rem;
-    border:var(--border);
-    font-size: 1.6rem;
-    color: var(--black);
-    text-transform: none;
-    padding: 1rem;    
-}
-.reservation input:hover {
-    border: 2px solid var(--primaire);
-    border-radius: 4px;
-    outline: none;
-}
-.reservation input:hover {
-    background-color: var(--blanche);
-    color: var(--persan);
-    letter-spacing: 1px;
-    width: 100%;
-    transition: all .4s ease-in;
-    display: inline-block;
-    cursor: pointer;
-}
-.validreserve input {
-    width: 75%;
-    padding: 5px 55px;
-    background-color: var(--primaire);
-    background: var(--persan);
-    border-radius: 4px;
-    border : 0;
-    color: var(--blanche);
-    margin-top: 2px;
-    margin-bottom: 2px;
-    cursor: pointer;
-    display: inline-block;
-}
-.validreserve input:hover {
-    background-color: var(--blanche);
-    color: var(--persan);
-    letter-spacing: 1px;
-    width: 100%;
-    transition: all .4s ease-in;
-    display: inline-block;
-    cursor: pointer;
-}
-
-/* End - Section RESERVATION - */
-
-
-
-
-
-/* Start - Section AVIS - OK */
-.avis .abox {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-    gap:2rem;
-}
-.avis .abox .box {
-    border: var(--border);
-    box-shadow: var(--box-shadow);
-    border-radius: .5rem;
-    padding:2.5rem;
-    background: var(--blanche);
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    z-index: 0;
-}
-.avis .abox .box img {
-    height: 10rem;
-    width: 10rem;
-    border-radius: 50%;
-    object-fit: cover;
-    border: .5rem solid var(--gold);
-}
-.avis .abox .box h3 {
-    color: var(--noir);
-    font-size: 2rem;
-    padding: .5rem 0;
-}
-.avis .abox .box .stars i {
-    color: var(--gold);
-    font-size: 1.5rem;
-}
-.avis .abox .box .texte {
-    color: var(--light-color);
-    line-height: 1.8;
-    font-size: 1.6rem;
-    padding-top: 4rem;
-}
-.avis .abox .box::before{
-    content: '';
-    position: absolute;
-    top:-4rem; left: 50%;
-    transform:translateX(-50%);
-    background:var(--persan);
-    border-bottom-left-radius: 60%;
-    border-bottom-right-radius: 60%;
-    height: 25rem;
-    width: 120%;
-    z-index: -1;
-}
-/* End - Section AVIS - OK */
-
-
-
-
-
-
 /* Start - Section BLOG - OK */
 .blog .blogbox {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
     gap:2rem;
+}
+.blog .subtile {
+    font-size: 2rem;
+    color:var(--MSP);
+    line-height: 1.8;
+    text-align: center;     
+    width: 100%;
+    height: 100%;
 }
 .blog .blogbox .box {
     border: var(--border);
@@ -758,125 +674,6 @@ header .navbar a:hover {
 
 
 
-
-
-
-
-
-
-/* Start - Section NEWSLETTER - ESSAI 2 - */
-    /* Start - NEWSLETTER : PARAGRAPHE DU SOUS-TITRE - OK */
-.newsletter {
-    display: grid;
-    grid-template-areas: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 2rem;
-    width: 100%;
-    padding: 15px;
-}   
-.newsletter p {
-    color: var(--light-color);
-    font-size: 2rem;
-    line-height: 1.2;
-    padding: 1rem;
-    padding-left: 20px;
-    padding-right: 25px;
-    text-align: justify;
-}
-    /* End - NEWSLETTER : PARAGRAPHE - OK */
-
-    /* Start - NEWSLETTER : SOUS-TITRE "FORMULAIRE A REMPLIR " - OK */
-.newsletter .row form h3{
-    color:var(--noir);
-    padding-bottom: 1rem;
-    font-size: 3rem;
-    text-align: center;
-    text-transform: uppercase;
-    border-bottom: 1px solid var(--primaire);
-    text-shadow: 2px 0 0 orange;
-}
-
-/* Start - FORMAT DES LEGENDES */
-.newsletter .row legend {
-    color: var(--persan);
-    font-weight: bold;
-    font-size: 1.5rem;    
-}
-/* Start - FORMAT DES INTITULES */
-.newsletter .row label {
-    color: var(--noir);
-    font-size: 1.4rem;
-}
-
-/* Start - FORMAT DES ZONES DE REMPLISSAGE */
-.newsletter .row form input {
-    margin: 2px 0;
-    padding: 5px;
-    border: 2px solid var(--MSP);
-    border-radius: 4px;
-    outline: 0;      
-}
-
-.newsletter .row form {
-    background: #fff;
-    border:var(--border);
-    padding: 2rem;
-    border-radius: .5rem;
-    border-radius: 25px;
-    margin: 0 auto;
-    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.2);
-}
-.newsletter .row form .box {
-    width: 100%;
-    margin:.7rem 0;
-    border-radius: .5rem;
-    border:var(--border);
-    font-size: 1.6rem;
-    color: var(--black);
-    text-transform: none;
-    padding: 1rem;    
-}
-.star {
-    color: red;
-    font-size: 20px;
-    margin-left: 3px;
-    font-weight: bold;
-}
-.newsletter input:hover {
-    border: 2px solid var(--primaire);
-    border-radius: 4px;
-    outline: none; 
-}
-.sinscrire input {
-    width: 75%;
-    padding: 5px 55px;
-    background-color: var(--primaire);
-    background: var(--persan);
-    border-radius: 4px;
-    border : 0;
-    color: var(--blanche);
-    margin-top: 2px;
-    margin-bottom: 2px;
-    cursor: pointer;
-    display: inline-block;
-}
-.sinscrire input:hover {
-    background-color: var(--blanche);
-    color: var(--persan);
-    letter-spacing: 1px;
-    width: 100%;
-    transition: all .4s ease-in;
-    display: inline-block;
-    cursor: pointer;
-}
-/* End - Section NEWSLETTER - ESSAI 2 - */
-
-
-
-
-
-
-
-
 /* Start - Section CONTACTS - OK */
 .contacts .contact {
     display: grid;
@@ -907,7 +704,7 @@ header .navbar a:hover {
     width: 100%;      
 }
 .contacts .contact .caseprenom:hover {
-    background-color: var(--green);
+    background-color: var(--MSP);
     color: var(--blanche);
     letter-spacing: 1px;
 }
@@ -928,7 +725,7 @@ header .navbar a:hover {
     width: 100%;  
 }
 .contacts .contact .caseadmail:hover {
-    background-color: var(--green);
+    background-color: var(--MSP);
     color: var(--blanche);
     letter-spacing: 1px;  
 }
@@ -988,7 +785,7 @@ header .navbar a:hover {
 .envoyer input {
     width: 87%;
     padding: 5px 55px;
-    background-color: var(--primaire);
+    background-color: var(--MSP);
     background: var(--persan);
     border-radius: 4px;
     border : 0;
@@ -1031,7 +828,7 @@ header .navbar a:hover {
 .supfooter {
     background: var(--noir);
     width: 100%;
-    padding: ;
+    padding: 2rem 1%;
     margin-top: 4rem;
     line-height: 1.2rem;
     padding: 0.75rem 1.5rem 0.75rem;
@@ -1103,9 +900,6 @@ header .navbar a:hover {
 
 
 
-
-
-
 /* Début : Réalisateur / Concepteur du site - OK */
 .fin {
     background-color: var(--gris);
@@ -1127,11 +921,6 @@ header .navbar a:hover {
     background-color: var(--gris);    
 }
 /* Fin : Réalisateur / Concepteur du site - OK */
-
-
-
-
-
 
 
 
