@@ -148,6 +148,7 @@ header .navbar a:hover {
     top:0; left: 0; right: 0;
     z-index: 1000;
     box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    background-image:url(../image/Banners/5183000.jpg);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -185,15 +186,27 @@ header .navbar a:hover {
 /* End - EN TÊTE DU SITE + LOGO + MENU / NAVBAR - OK */
 
 
+/* Start - BANNIERE - OK */
+#banniere {
+    padding-top: 28rem;
+    position: fixed;
+    width:100%;
+	background-position: 10%;
+    background-size:cover;0
+	margin-bottom: 20px;
+    background-image:url(../image/Banners/Kerfin7-NEA-2129.jpg);
+    background-color: #00b5c6;
+}
+/* End - BANNIERE - OK */
 
 
 /* Start - Section ACCUEIL - OK */
 .home {
+    padding-top: 35%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap:2rem;
     align-items: center;
-    padding-top: 18rem;
 }
 .home .image{
     flex:1 1 45rem;
@@ -240,12 +253,12 @@ header .navbar a:hover {
 
 /* Start - Section Homecontent OK */
 .homecontent {
+    padding-top: 18rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap:2rem;
     align-items: center;
     gap:1.5rem;
-    padding-top: 10rem;
 }
 .homecontent .image{
     flex:1 1 45rem;
@@ -255,7 +268,7 @@ header .navbar a:hover {
 }
 /* Start - Section Homecontent - Content OK*/
 .homecontent .content{
-    flex:1 1 45rem;
+    flozaex:1 1 45rem;
 }
 .homecontent .content h2{
     font-size: 4.5rem;
@@ -290,12 +303,12 @@ header .navbar a:hover {
 
 /* Start - Section MISSIONS OK */
 .missions {
+    padding-top: 18rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:2rem;
     align-items: center;
     gap:1.5rem;
-    padding-top: 10rem;
 }
 .missions .image{
     flex:1 1 45rem;
@@ -339,12 +352,12 @@ header .navbar a:hover {
 
 /* Start - Section OBJECTIFS OK */
 .objectifs {
+    padding-top: 10rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:2rem;
     align-items: center;
     gap:1.5rem;
-    padding-top: 10rem;
 }
 .objectifs .image{
     flex:1 1 45rem;
@@ -977,6 +990,10 @@ header .navbar a:hover {
     
     html{
         font-size: 50%;
+    }
+
+    .homecontent{
+        padding-top: ;
     }
 }
 /* End - MEDIA QUERIES - OK */
