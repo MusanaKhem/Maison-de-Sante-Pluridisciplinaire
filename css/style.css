@@ -39,7 +39,7 @@
 /* Start - PARAMETRES GENERAUX : SITE, SECTIONS, EN TÊTE DU SITE - OK */
     /* Start - PARAMETRES SITE - OK */
 html{
-    font-size: 62.5%;
+    font-size: 60%;
     overflow-x: hidden;
     scroll-padding-top: 7rem;
     scroll-behavior: smooth;
@@ -142,17 +142,18 @@ header .navbar a:hover {
 
 
 /* Start - EN TÊTE DU SITE + LOGO + MENU / NAVBAR - OK */
-.header{
-    padding:2rem 9%;
+.header {
     position: fixed;
-    top:0; left: 0; right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
     box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
-    background-image:url(../image/Banners/5183000.jpg);
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: #fff;
+    padding: 2rem 9%;
 }
 .header .logo{
     font-size: 2.5rem;
@@ -187,25 +188,53 @@ header .navbar a:hover {
 
 
 /* Start - BANNIERE - OK */
+.banner-wrapper {
+    position: relative;
+}
+
 #banniere {
-    padding-top: 28rem;
+
     position: fixed;
-    width:100%;
-	background-position: 10%;
-    background-size:cover;0
-	margin-bottom: 20px;
-    background-image:url(../image/Banners/Kerfin7-NEA-2129.jpg);
+    width: 100%;
+    background-position: 10%;
+    background-size: cover;
+    margin-bottom: 10px;
+    margin-top: 4rem;
+    background-image: url(../image/Banners/Kerfin7-NEA-2129.jpg);
     background-color: #00b5c6;
+    top: 0;
+    z-index: 999; /* Assurez-vous qu'il a un z-index plus élevé que le menu */
+    padding-top: 18rem; /* Ajustez la valeur pour augmenter la hauteur de la bannière */
+    height: 15vh; /* Ajustez la valeur selon vos besoins */
+}
+
+/* Styles for the banner */
+.banniere {
+    background-color: #007BFF;
+    color: #e932af;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 7px;
+    position: relative; /* Ajout de la propriété position relative */
+    z-index: 2; /* Ajout de la propriété z-index pour afficher au-dessus du contenu */
+}
+
+/* Styles for the scrolling text */
+#scrolling-text {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 60%; /* Occuper 60% de la largeur de la bannière */
+    animation: scrolling 15s linear infinite;
 }
 /* End - BANNIERE - OK */
 
 
 /* Start - Section ACCUEIL - OK */
 .home {
-    padding-top: 35%;
+    padding-top: 18rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap:2rem;
+    gap: 2rem;
     align-items: center;
 }
 .home .image{
@@ -230,7 +259,6 @@ header .navbar a:hover {
     color:var(--noir);
     line-height: 1.8;
     text-shadow: 2px 0 0 orange;
-
 }
 .home .content p{
     font-size: 1.7rem;
@@ -253,7 +281,7 @@ header .navbar a:hover {
 
 /* Start - Section Homecontent OK */
 .homecontent {
-    padding-top: 18rem;
+    padding-top: 5rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap:2rem;
@@ -268,7 +296,7 @@ header .navbar a:hover {
 }
 /* Start - Section Homecontent - Content OK*/
 .homecontent .content{
-    flozaex:1 1 45rem;
+    flex:1 1 45rem;
 }
 .homecontent .content h2{
     font-size: 4.5rem;
@@ -303,7 +331,7 @@ header .navbar a:hover {
 
 /* Start - Section MISSIONS OK */
 .missions {
-    padding-top: 18rem;
+    padding-top: 5rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:2rem;
@@ -352,7 +380,7 @@ header .navbar a:hover {
 
 /* Start - Section OBJECTIFS OK */
 .objectifs {
-    padding-top: 10rem;
+    padding-top: 5rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:2rem;
@@ -400,6 +428,10 @@ header .navbar a:hover {
 
 
 /* Start - Section SERVICES - Content OK */
+.services {
+    padding-top: 5px;
+}
+
 .services .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
@@ -439,7 +471,7 @@ header .navbar a:hover {
 .services .box-container .box h3 {
     color: var(--noir);
     font-size: 2.5rem;
-    padding:1rem 0;
+    padding: 1rem 0;
     text-align: center;
 }
 .services .box-container .box p {
@@ -461,7 +493,7 @@ header .navbar a:hover {
     gap:2rem;
     align-items: center;
     gap:1.5rem;
-    padding-top: 10rem;
+    padding-top: 5rem;
 }
 .infos .image{
     flex:1 1 85rem;
@@ -640,7 +672,7 @@ header .navbar a:hover {
 }
 .blog .blogbox .box .image {
     height: 20rem;
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: .5rem;
     border: .5rem solid var(--gold);
 }
@@ -795,6 +827,7 @@ header .navbar a:hover {
     resize: none; 
     outline: 0;  
 }
+/* à revoir */
 .envoyer input {
     width: 87%;
     padding: 5px 55px;
@@ -938,22 +971,37 @@ header .navbar a:hover {
 
 
 /* Start - MEDIA QUERIES - OK */
-@media (max-width:991px){
-    
-    html{
-        font-size: 55%;
-    }
-    
-    .header{
-        padding: 2rem;
-    }
-    
-    section{
-        padding:2rem;
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px; /* Ajustement pour les écrans étroits */
     }
 }
 
-@media (max-width:768px){
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 18px; /* Ajustement pour les écrans larges */
+    }
+}
+
+@media (max-width: 800px) {
+    html {
+        font-size: 45%;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    #banniere {
+        top: 6rem; /* Ajustez la valeur selon vos besoins */
+    }
+}
+
+@media (max-width: 600px){
 
     #menu-btn{
         display: initial;
@@ -961,7 +1009,8 @@ header .navbar a:hover {
     
     .header .navbar{
         position: absolute;
-        top:115%; right: 2rem;
+        top: 115%;
+        right: 2rem;
         border-radius: .5rem;
         box-shadow: var(--box-shadow);
         width: 30rem;
@@ -984,16 +1033,39 @@ header .navbar a:hover {
         display: block;
         margin:2.5rem;
     }
+
+    #banniere {
+        padding-top: 16rem; /* Ajustez la valeur selon les besoins */
+        padding-bottom: 4rem;
+        top: 4rem; /* Ajustez la valeur pour aligner avec le menu */
+        height: 25vh; /* Ajustez la valeur selon vos besoins pour les écrans plus petits */
+    }
 }
 
-@media (max-width:450px){
+@media (max-width:300px){
     
     html{
         font-size: 50%;
     }
 
     .homecontent{
-        padding-top: ;
+        padding-top: 4px;
+    }
+
+    #banniere {
+        padding-top: 15rem; /* Ajustez la valeur selon vos besoins */
+        top: 7rem; /* Ajustez la valeur pour aligner avec le menu */
+        padding-right: 20%;
+    }
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
     }
 }
 /* End - MEDIA QUERIES - OK */
